@@ -192,7 +192,7 @@ function IBMPushNode(n) {
 	});
 }
 
-RED.nodes.registerType("ibmpush", IBMPushNode);
+RED.nodes.registerType("custom-ibmpush", IBMPushNode);
 
 //util function for Mobile Push ReST calls
 

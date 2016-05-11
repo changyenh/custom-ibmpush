@@ -105,7 +105,7 @@
 
 
 <script type="text/javascript">
-    RED.nodes.registerType('ibmpush',{
+    RED.nodes.registerType('custom-ibmpush',{
         category: 'custom',
         color:"rgb(115, 185, 221)",     
         defaults: {   
@@ -121,7 +121,7 @@
         icon: "ibmpush-icon.png", 
         align: "right",
         label: function() {
-            return this.name ||"IBM Push";
+            return this.name ||"Custom IBM Push";
         },
         labelStyle: function() {
             return this.name?"node_label_italic":"";
