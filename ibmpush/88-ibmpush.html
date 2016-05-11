@@ -14,14 +14,14 @@
   limitations under the License.
 -->
  
-<script type="text/x-red" data-template-name="ibmpush">
+<script type="text/x-red" data-template-name="custom-ibmpush">
    
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
     <br>
-    <b>Mobile Push Properties</b><br/>
+    <b>Custom Mobile Push Properties</b><br/>
     <div class="form-row">
         <label for="node-input-mode"><i class="fa fa-share-alt"></i> Mode</label>
         <select id="node-input-mode" style="margin-right:3px;">
@@ -77,7 +77,7 @@
 
 
 
-<script type="text/x-red" data-help-name="ibmpush">
+<script type="text/x-red" data-help-name="custom-ibmpush">
     <p>Sends Push Notifications to mobile devices using IBM Push notification for Bluemix</p>
     <p><code>msg.payload</code> is used as the alert in the Notification.
     <p><b>Mobile Push Properties</b></p>
@@ -106,7 +106,7 @@
 
 <script type="text/javascript">
     RED.nodes.registerType('ibmpush',{
-        category: 'output',
+        category: 'custom',
         color:"rgb(115, 185, 221)",     
         defaults: {   
             name: {},
